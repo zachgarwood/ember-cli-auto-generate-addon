@@ -1,9 +1,10 @@
 {
   "name": "ember-cli-auto-generate-addon-npm",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An alternative to `ember install`",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "auto-generate"
   ],
   "repository": "",
   "license": "MIT",
@@ -18,7 +19,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "postinstall": "ember generate $npm_package_name"
   },
   "dependencies": {
     "ember-cli-babel": "^7.1.2"
@@ -50,7 +52,7 @@
     "qunit-dom": "^0.8.0"
   },
   "engines": {
-    "node": "6.* || 8.* || >= 10.*"
+    "npm": "6.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
