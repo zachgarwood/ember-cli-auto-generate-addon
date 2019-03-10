@@ -1,10 +1,11 @@
 {
-  "name": "ember-cli-auto-generate-addon-npm",
+  "name": "ember-cli-auto-generate-addon",
   "version": "0.0.0",
   "description": "An alternative to `ember install`",
   "keywords": [
     "ember-addon",
-    "auto-generate"
+    "auto",
+    "generate"
   ],
   "repository": "",
   "license": "MIT",
