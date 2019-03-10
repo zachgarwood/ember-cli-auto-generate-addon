@@ -21,7 +21,7 @@
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each",
-    "postinstall": "ember generate $npm_package_name"
+    "postinstall": "cd $INIT_CWD && ember generate ember-cli-auto-generate-addon"
   },
   "dependencies": {
     "ember-cli-babel": "^7.1.2"

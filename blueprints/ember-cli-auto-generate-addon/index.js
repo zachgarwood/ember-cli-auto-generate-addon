@@ -9,8 +9,5 @@ module.exports = {
   normalizeEntityName() {/* no-op */},
   afterInstall() {
     return fs.chmodSync(POST_INSTALL_HOOK, 0o755);
-  },
-  beforeUninstall() {
-    return fs.unlinkSync(POST_INSTALL_HOOK);
   }
 };
